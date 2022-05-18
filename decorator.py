@@ -1,8 +1,8 @@
 import time
 
-
+# The purpose of having a wrapper function is that a function decorator receives a function object to decorate, and it must return the decorated function.
 def my_decorator(function):
-    def wrapper(*args, **kwargs):
+    def wrapper(*args, **kwargs): 
         print("I'm decorating your function!")
         function(*args, **kwargs)
 
